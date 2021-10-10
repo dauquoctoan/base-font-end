@@ -1,0 +1,39 @@
+:root {
+    --while-color: #fff;
+    --back-color: #000;
+    --text-color: #333;
+}
+
+*{
+    /* inherit ke thua lai the chua no (kế thừa lại box-sizing: border-box;)*/
+    box-sizing: inherit;
+}
+
+html {
+    /* hack moi 1rem dinh ngia tuong duong voi 10px*/
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+grid__row {
+    /* tao truc nam ngang */
+    display: flex;
+    /* khi thu  nho man hinh se nhay xuong hang */
+    flex-wrap: wrap;
+}
